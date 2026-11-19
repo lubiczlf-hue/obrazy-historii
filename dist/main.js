@@ -1,0 +1,33 @@
+const menuButton = document.querySelector('.menu-toggle');
+const navigation = document.querySelector('#navigation');
+const closeMenu = () => { menuButton.setAttribute('aria-expanded', 'false'); menuButton.setAttribute('aria-label', 'Otwórz menu'); navigation.classList.remove('is-open'); };
+menuButton.addEventListener('click', () => {
+  const expanded = menuButton.getAttribute('aria-expanded') === 'true';
+  menuButton.setAttribute('aria-expanded', String(!expanded));
+  menuButton.setAttribute('aria-label', expanded ? 'Otwórz menu' : 'Zamknij menu');
+  navigation.classList.toggle('is-open', !expanded);
+});
+navigation.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
+document.addEventListener('keydown', event => { if (event.key === 'Escape' && menuButton.getAttribute('aria-expanded') === 'true') { closeMenu(); menuButton.focus(); } });
+document.addEventListener('click', event => { if (!event.target.closest('.header')) closeMenu(); });
+document.querySelector('#year').textContent = new Date().getFullYear();
+const formatter = new Intl.DateTimeFormat('pl-PL', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
+(window.NEWS || []).forEach(item => {
+  const link = document.createElement('a');
+  link.className = 'news-card'; link.href = item.url; link.target = '_blank'; link.rel = 'noopener noreferrer';
+  const media = document.createElement('div'); media.className = 'news-image';
+  const image = document.createElement('img');
+  image.src = item.image || 'assets/las44-hero.jpg'; image.alt = item.imageAlt || item.title;
+  image.loading = 'lazy'; image.decoding = 'async'; image.width = 800; image.height = 450;
+  image.addEventListener('error', () => { if (!image.src.endsWith('/assets/las44-hero.jpg')) image.src = 'assets/las44-hero.jpg'; }, { once: true });
+  media.append(image);
+  const body = document.createElement('div'); body.className = 'news-body';
+  const meta = document.createElement('div'); meta.className = 'news-meta';
+  const source = document.createElement('span'); source.textContent = item.source;
+  const time = document.createElement('time'); time.dateTime = item.date; time.textContent = formatter.format(new Date(item.date + 'T12:00:00Z'));
+  meta.append(source, time);
+  const title = document.createElement('h3'); title.textContent = item.title;
+  const description = document.createElement('p'); description.textContent = item.description;
+  const label = document.createElement('span'); label.className = 'news-read'; label.textContent = item.linkLabel;
+  body.append(meta, title, description, label); link.append(media, body); document.querySelector('#news-list')?.append(link);
+});
