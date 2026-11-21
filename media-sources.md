@@ -4,6 +4,11 @@ Wyszukiwanie i weryfikacja: 19 listopada 2026 r.
 
 ## Potwierdzone publikacje dodane do strony
 
+- OstrowMaz24.pl, 21.11.2026, godz. 17:30: Powstaje film o bitwie pod Pecynką. Wnuk żołnierza AK chce opowiedzieć historię swojego dziadka.
+  https://www.ostrowmaz24.pl/news/powstaje-film-o-bitwie-pod-pecynka-wnuk-zolnierza-ak-chce-opowiedziec-historie-swojego-dziadka
+  Miniatura: grafika og:image publikacji (podpisana przez portal jako fot. pomagam.pl), lokalnie assets/news-ostrowmaz24.webp.
+  Dodano i zweryfikowano 21 listopada 2026 r.
+
 - Ostrołęcki24.pl, 17.11.2026, godz. 22:03: „Las44” przeniesie bitwę pod Pecynką na ekran. To była walka o wyrwanie się z okrążenia.
   https://ostrolecki24.pl/20261117170764/las44-przeniesie-bitwe-pod-pecynka-na-ekran-to-byla-walka-o-wyrwanie-sie-z-okrazenia
   Miniatura: grafika og:image tej publikacji, lokalnie assets/news-ostrolecki24.webp.
@@ -17,4 +22,4 @@ Artykuł Ostrołęcki24.pl wskazuje Muzeum jako źródło. Są to dwie publikacj
 
 Dwie wyszukiwarki: warianty tytułu Las44, Las 44, Las ’44, domena las44.pl, nazwisko autora, Pecynka / Pecynką, film i patronat. Sprawdzono też wyszukiwanie w witrynach patronów: Muzeum Dom Rodziny Pileckich i Rakowiecka37.pl, oraz wyniki dotyczące lokalnych portali i publicznych postów Facebooka.
 
-Nie potwierdzono innych publikacji na osobnych, dostępnych stronach. To wynik wyszukiwania, nie gwarancja kompletności internetu ani mediów społecznościowych. Samą zbiórkę i własną stronę filmu pominięto w sekcji publikacji zewnętrznych. Nie dodano niezweryfikowanych postów ani ogólnych stron instytucji zamiast odnośników do konkretnych publikacji.
+Na dzień wyszukiwania (19 listopada 2026 r.) nie potwierdzono innych publikacji na osobnych, dostępnych stronach. To wynik wyszukiwania, nie gwarancja kompletności internetu ani mediów społecznościowych. Samą zbiórkę i własną stronę filmu pominięto w sekcji publikacji zewnętrznych. Nie dodano niezweryfikowanych postów ani ogólnych stron instytucji zamiast odnośników do konkretnych publikacji.

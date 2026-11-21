@@ -19,3 +19,16 @@
 .brand{height:88px;display:flex;align-items:center;overflow:visible}.brand img{position:static;width:100%;height:auto;max-width:100%}.footer-logo{width:190px;max-width:100%;display:block;margin-bottom:25px}.footer-logo img{width:100%;height:auto;filter:brightness(0) invert(1)}
 @media(max-width:760px){.brand{height:78px}.footer-logo{width:170px;margin-bottom:24px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+
+/* Film synopsis and readable regulation. Content stays in flow at every screen width. */
+.film-frame{display:flex;align-items:flex-end;min-height:620px}
+.film-bottom{position:relative;inset:auto;width:100%;padding:220px 40px 36px}
+.film-copy{max-width:650px;min-width:0}
+.film h2{margin-bottom:10px}
+.film-subtitle{font-size:20px;font-weight:500;letter-spacing:.02em;margin-bottom:16px}
+.film-actions{flex-shrink:0;min-width:200px}
+.regulation-page ol{padding-left:26px;margin:0 0 24px}
+.regulation-page li{padding-left:6px;margin-bottom:13px}
+.regulation-page .legal-publication-note{font-size:14px;border-left:2px solid var(--red);padding:12px 18px;background:#f0f1ec;margin-bottom:35px}
+.regulation-page .text-link{margin-top:25px}
+@media(max-width:760px){.film-frame{min-height:650px}.film-bottom{padding:200px 22px 24px}.film-copy{max-width:none}.film-subtitle{font-size:18px;margin-bottom:13px}.film-actions{min-width:0;flex-wrap:wrap;gap:16px 20px}.regulation-page ol{padding-left:23px}.regulation-page li{padding-left:3px}}
