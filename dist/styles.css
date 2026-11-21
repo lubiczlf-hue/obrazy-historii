@@ -32,3 +32,8 @@
 .regulation-page .legal-publication-note{font-size:14px;border-left:2px solid var(--red);padding:12px 18px;background:#f0f1ec;margin-bottom:35px}
 .regulation-page .text-link{margin-top:25px}
 @media(max-width:760px){.film-frame{min-height:650px}.film-bottom{padding:200px 22px 24px}.film-copy{max-width:none}.film-subtitle{font-size:18px;margin-bottom:13px}.film-actions{min-width:0;flex-wrap:wrap;gap:16px 20px}.regulation-page ol{padding-left:23px}.regulation-page li{padding-left:3px}}
+
+/* Align visible film lettering and reduce the header association logo by 30%. */
+.film-logo{transform:translateX(-10%)}
+.brand{width:163.8px}
+@media(max-width:760px){.brand{width:126px}}
